@@ -1,0 +1,76 @@
+Estrutura de Section HTML:
+
+        <section class="default light">
+            <div class="section-title">About Us</div>
+            <div class="section-desc">Who we are ?</div>
+            <div class="section-body">
+                ...
+            </div>
+        </section>
+        
+        <section class="default dark">
+            <div class="section-title">Titulo</div>
+            <div class="section-desc">Descricao maiss algumna</div>
+            <div class="section-body">
+                ...
+            </div>
+        </section>
+
+        <section class="default light">
+            <div class="section-title">Titulo</div>
+            <div class="section-desc">Descricao maiss algumna</div>
+            <div class="section-body">
+                ...
+            </div>
+        </section>
+
+CSS:
+
+.default {
+    width: 100vw;               Area da Section default
+    padding-top: 50px;          espaçamento de 50px de todos os elementos
+    padding-bottom: 50px;       para cima e para baixo.
+}
+
+.default .section-title,          Divs de Titulo de Descrição terão alinhamento de texto no centro
+.default .section-desc {          Todas as letras são MAIUSCULAS e possuem negrito de 600 (padrao do h1 acima).
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .section-title {
+    font-size: 20px;              Titulo terá 20px de tamanho.
+}
+
+.default .section-desc {
+    font-size: 12px;            fonte de texto de 12px na descrição da section,
+    color: #CCC;                color cinza com espaçamento de 10px pra cima e
+    margin-top: 10px;           40px para baixo.
+    margin-bottom: 40px;
+}
+
+.default .section-body {
+    max-width: 1140px;                   largura maxima de 1140px com espaçamento automatico para todos os lados
+    margin: auto;                        e fundo cinza.
+    background-color: #CCC;
+}
+
+.default.light {
+    background-color: #f7f7f7;            
+}                                        Fundo Branco com cor de texto preta.
+
+.default.light .section-title {            
+    color: #000;
+}
+
+
+
+
+.default.dark {
+    background-color: #000;               
+}
+                                          Fundo Preto com cor de texto branca.
+.default.dark .section-title {
+    color: #fff;
+}

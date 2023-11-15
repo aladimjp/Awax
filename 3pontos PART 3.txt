@@ -1,0 +1,39 @@
+3 pontos no banner HTML:
+
+            <div class="sliders-pointers"> 
+                <div class="pointer active"></div>
+                <div class="pointer"></div>
+                <div class="pointer"></div>
+            </div>
+
+
+CSS:
+
+
+.banner .sliders-pointers {
+    width: 100vw;                 area dos tres pontos acima do banner
+    height: 20px;                 com largura de 100vw (monitor) e
+                                  altura de 20px.
+
+    position: absolute;           posição absoluta para subir div (acima do banner).
+    margin-top: -50px;            margin-top -50 para posicionar acima do banner.
+
+    display:flex;                 flex para posicionar pontos um ao lado do outro.
+    justify-content: center;      centralizar na horizontal.
+    align-items: center;          centralizar na vertical.
+}
+
+.banner .pointer {
+    width: 15px;                    ponto irá ter 15px x 15px.
+    height: 15px;                   borda de 2px solid (cor #b28756) e curvatura de 8px.
+    border: 2px solid #b28756;      
+    border-radius: 8px;
+
+    margin-left: 5px;               espaçamento para esquerda e direita de todos os pontos
+    margin-right: 5px;              e por ultimo cursor pointer para passar mouse em cima.
+    cursor: pointer;
+}
+
+.banner .pointer.active {
+    background-color: #b28756;
+}

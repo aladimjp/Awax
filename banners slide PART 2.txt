@@ -1,0 +1,95 @@
+Parte MAIN do HTML BANNERS e SLIDERS:
+
+     <main>
+        <section class="banner">
+            <div class="sliders">
+                <div class="slide">
+                    <div class="slidearea">
+                        <h1>Design is about<br><span>Communication</span></h1>
+                        <h2>Call Us: +00 0 1234 5678</h2>
+                        <a href="#">Get In touch!</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    ...2
+                </div>
+                <div class="slide">
+                    ...3
+                </div>
+            </div>
+
+
+
+
+
+
+
+area do banner e img: CSS
+
+
+
+.btn {
+    display: block;                 Precisamos Mexer em padding.
+    background-color: #b28756;      Cor padrao do site.
+    color: #fff;                    Cor branca na fonte.
+    text-transform: uppercase;      Fonte Maiuscula.
+    font-size: 12px;                Fonte do a href com 12px.
+    font-weight: 600;               Negrito de 600
+    text-decoration: none;
+    padding: 10px 30px;            superior 10px lateral 30px
+    margin-top: 30px;              espaço acima de 30px.
+    border-radius: 20px;           curvatura das BORDAS de 20px
+}
+
+
+
+.banner {
+    height: calc(100vh - 100px);               calc para calcular 100vh - 100px (header).
+    background-color: #333;                    cor escura atras da img banner.
+    background-image: url('../images/bg.jpg');  (banner img).
+    background-size: cover;                    preencher todo espaço da imagem (corrigir tamanho da ft).
+    background-position: center;               posição da ft (centro).
+    overflow: hidden;
+
+.banner .sliders {
+    width: 1000vw;                a area de slide precisa suporta ate 10 telas e todas elas
+    height: 100%;                 possuem 1000 view 100% de altura..
+}                                 vw: viewport's width (largura da janela de visualização).
+
+.banner .slide {
+    width: 100vw;                         largura da janela de visualização (tela pc).
+    height: 100%;                         altura de 100%.
+    display: inline-block;                todas div slide em inline (mesma linha) e mantendo tags anteriores de altura. (block)
+    background-color: rgba(0, 0 ,0 , 0.8);              (sombra meio escura no banner com opacidade em 0.8)
+}
+
+.banner .slidearea {
+    display: flex;                  flex para ficar um ao lado do outro.
+    height: 100%;                   altura de 100%.
+    justify-content: center;        posicionar DIV COM TEXT ao centro da tela (horizontal).
+    align-items: center;            posicionar DVI COM TEXT ao centro (vertical).
+    color: #fff;                    cor do texto branco.
+    flex-direction: column;         flex direction para colunas. texto um abaixo do outro (h1 e h2)
+}
+
+
+
+
+texto banner: CSS
+
+
+
+.banner h1 {
+    text-transform: uppercase;     Texto colocado em maiusculo.
+    font-weight: bold;             TEXTO NEGRITO.
+    font-size: 50px;               FONTE DE TEXTO COM 50px.
+}
+
+.banner h1 span {                  <span> dentro de outra tag, e aplicamos um estilo somente dentro daquele trecho específico.
+    color: #b28756;                cor meio laranja
+}
+
+.banner h2 {
+    text-transform: uppercase;      Texto colocado em maiusculo.
+    margin-top: 20px;               indica o espaço acima do elemento. 20px.
+}
